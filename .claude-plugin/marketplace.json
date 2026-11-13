@@ -1,0 +1,14 @@
+{
+  "name": "jobsearch-os",
+  "owner": { "name": "Kevin Segedi", "url": "https://kevinsegedi.com" },
+  "metadata": { "description": "JobSearch OS: run your job search with Claude and your Google apps, with you in charge of every decision." },
+  "plugins": [
+    {
+      "name": "jobsearch-os",
+      "source": "./plugins/jobsearch-os",
+      "description": "Setup interview, on-demand Gmail and Calendar syncs into a Google Sheet tracker, application drafting, interview prep briefs and thank-you drafts.",
+      "version": "0.1.0",
+      "license": "CC-BY-NC-4.0"
+    }
+  ]
+}
