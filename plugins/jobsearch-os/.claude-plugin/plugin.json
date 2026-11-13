@@ -1,6 +1,6 @@
 {
   "name": "jobsearch-os",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Run a job search with Claude and your Google apps: one tracker sheet, one Drive folder per company, on-demand Gmail and Calendar syncs, cover letter drafting, interview prep briefs and thank-you drafts. You stay in charge of every decision and every message.",
   "author": {
     "name": "Kevin Segedi",
