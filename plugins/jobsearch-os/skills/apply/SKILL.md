@@ -6,14 +6,14 @@ description: >
   "tailor my resume", "which resume should I use", "archive this job description",
   "I got a referral", or "answer these application questions".
 metadata:
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Apply: archive, fit, resume and cover letter
 
 Read the `jobsearch-os-rules` skill first and load the user's settings. The user decides whether to apply and submits the application. Claude prepares.
 
-**One request per message.** Ask for each missing input in its own message, wait for the answer, then ask for the next. Never bundle two requests.
+**How to ask.** Follow section 7 of `jobsearch-os-rules`: one request per message, pre-fill from Gmail and Drive where possible (for example the referrer's email from past messages), tappable choices for yes-or-no and short-list questions, and record any extra answers the user gives at once.
 
 ## 1. Inputs
 
@@ -23,9 +23,9 @@ Work out what the user already gave. Then ask only for what is missing, one item
 2. The company, if the job description doesn't make it clear.
 3. The role title, if the job description doesn't make it clear.
 4. The requisition ID, if the posting has one. Accept "none".
-5. Whether this is a referral.
+5. Whether this is a referral. *Choices*: No, I applied directly (Recommended); Yes, it's a referral.
 6. If it is a referral, the referrer's name.
-7. If it is a referral, the referrer's contact details: email, phone or LinkedIn URL. Accept whatever the user has.
+7. If it is a referral, the referrer's contact details: email, phone or LinkedIn URL. First search Gmail for messages from or to the referrer and offer any address found to confirm. Accept whatever the user has.
 8. Any application questions the form asks. Accept "none".
 
 Take the salary range from the posting. Ask for it separately only if the posting has none and the tracker has a Salary Range column, and accept "unknown".

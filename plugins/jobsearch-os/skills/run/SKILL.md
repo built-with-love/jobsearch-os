@@ -5,7 +5,7 @@ description: >
   "sync my job search", "update my tracker", "check my job emails", "any new rejections?",
   or asks for a refresh of application statuses from Gmail and Calendar.
 metadata:
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Run a JobSearch OS sync

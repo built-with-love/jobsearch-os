@@ -5,7 +5,7 @@ description: >
   "I just finished my interview", "draft thank-you emails", "write thank-you notes",
   or "follow up with the interviewers".
 metadata:
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # After the interview: thank-you drafts and a review block

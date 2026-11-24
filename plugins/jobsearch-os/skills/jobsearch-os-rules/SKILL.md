@@ -7,7 +7,7 @@ description: >
   "what's the status of my applications", or before running any other JobSearch OS skill
   (setup, run, apply, prep, thanks). It holds the standing rules and how to load the user's settings.
 metadata:
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # JobSearch OS: standing rules
@@ -61,9 +61,15 @@ If a setting a task needs is still a placeholder (for example, the tracker Sheet
 
 ## 6. Missing inputs
 
-If a task needs something only the user can supply (a job description, interviewer names and LinkedIn details, a recruiter's name, interview date and format, salary range, application questions, a referrer's name and contact details), first check Drive, Gmail and Calendar. Then ask for what is still missing.
+If a task needs something only the user can supply (a job description, interviewer names and LinkedIn details, a recruiter's name, interview date and format, salary range, application questions, a referrer's name and contact details), first check Drive, Gmail and Calendar. Then ask for what is still missing, following "How to ask" in section 7. Do not build around the gap.
 
-- Ask for one thing per message, wait for the answer, then ask for the next. Never bundle requests, even short or related ones.
-- Ask in order of what the task needs first.
-- Accept "none", "unknown" or "skip" and move on.
-- Do not build around the gap.
+## 7. How to ask
+
+These apply to every JobSearch OS skill.
+
+- **One request per message.** Ask for one thing, wait for the answer, then ask for the next. Never bundle requests, even short or related ones. Ask in order of what the task needs first.
+- **Pre-fill from the user's accounts.** Before asking for anything that may already exist in Gmail, Calendar or Drive (a label, a folder, an email address, a job description, an interview time, an interviewer's name, a referrer's email), look it up. If found, ask the user to confirm it instead of typing it.
+- **Tappable choices with a recommended default.** When a question has a sensible default or a small set of likely answers, offer two to four options with the recommended one first, labeled "(Recommended)". Use the client's multiple-choice question tool when one is available; otherwise list the options as a short numbered list. The user can always type their own answer.
+- **Running tally.** When a task asks more than three questions, show a one- or two-line tally after each answer: what's captured and what's next.
+- **Take extra answers.** If the user answers several things at once, record all of them and skip those questions. Never re-ask something already answered.
+- Accept "none", "unknown" or "skip" and move on. Do not build around the gap.

@@ -35,7 +35,7 @@ Your settings live in the "JobSearch OS Settings" Google Doc in your Drive year 
 - Nothing is sent, submitted, deleted or trashed without your explicit request.
 - Syncs run only when you ask.
 - Claude never invents experience and respects your "claims I won't make" list.
-- Claude asks for one thing at a time, so you never have to answer a block of questions at once.
+- Claude asks for one thing at a time, offers tappable choices with a recommended default, fills in what it can find in your Gmail and Drive for you to confirm, and shows a short tally of what's captured and what's left.
 
 ## License
 

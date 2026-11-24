@@ -5,7 +5,7 @@ description: >
   "prep me for my interview with", "build a prep brief", "schedule a mock interview",
   "who am I meeting", or shares an interview invite.
 metadata:
-  version: "0.2.0"
+  version: "0.3.0"
 ---
 
 # Interview prep: brief and mock interview block
@@ -16,8 +16,8 @@ Read the `jobsearch-os-rules` skill first and load the user's settings.
 
 1. Find the interview on the calendar and the related emails in Gmail. Pull the date, time, format (screen, one-on-one or panel), and participant names and roles.
 2. Find the company folder: job description, tailored resume and cover letter.
-3. Ask for anything still missing, one request per message, waiting for each answer before the next:
-   - The interview format, if the invite doesn't say (screen, one-on-one or panel).
+3. Ask for anything still missing, following section 7 of `jobsearch-os-rules` (one request per message, confirm what you found, tappable choices):
+   - The interview format, if the invite doesn't say. *Choices*: Screen, One-on-one, Panel.
    - The recruiter's name, if it isn't in the emails.
    - Each interviewer's LinkedIn details, one interviewer per message: headline, current role and recent experience. Claude cannot open LinkedIn, so the user pastes them.
 

@@ -7,7 +7,7 @@
       "name": "jobsearch-os",
       "source": "./plugins/jobsearch-os",
       "description": "Setup interview, on-demand Gmail and Calendar syncs into a Google Sheet tracker, application drafting, interview prep briefs and thank-you drafts.",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "license": "CC-BY-NC-4.0"
     }
   ]
