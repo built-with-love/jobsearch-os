@@ -5,7 +5,7 @@ description: >
   "I just finished my interview", "draft thank-you emails", "write thank-you notes",
   or "follow up with the interviewers".
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # After the interview: thank-you drafts and a review block
@@ -16,7 +16,7 @@ Read the `jobsearch-os-rules` skill first and load the user's settings. Claude d
 
 1. Find the interview on the calendar. Take participant names and roles from the invite.
 2. Find participant email addresses in the invite or related emails. If they are missing or hidden, plan to address that note to the recruiter with a line asking them to forward it, and say so.
-3. Ask the user for one or two specifics from each conversation (a topic discussed, a question asked, something they want to reinforce). If the user has nothing to add, draft from the prep brief and job description and say the notes will be more generic.
+3. Ask about one participant per message: one or two specifics from that conversation (a topic discussed, a question asked, something to reinforce). Wait for the answer before asking about the next person. If the user has nothing to add for someone, draft that note from the prep brief and job description and say it will be more generic.
 
 ## 2. Drafts
 

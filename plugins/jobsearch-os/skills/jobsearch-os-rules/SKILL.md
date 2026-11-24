@@ -7,7 +7,7 @@ description: >
   "what's the status of my applications", or before running any other JobSearch OS skill
   (setup, run, apply, prep, thanks). It holds the standing rules and how to load the user's settings.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # JobSearch OS: standing rules
@@ -22,7 +22,7 @@ Every JobSearch OS task depends on the user's own details. Load them before doin
 2. Otherwise, search Google Drive for a Google Doc whose title contains `JobSearch OS Settings` and read it.
 3. If neither exists, stop and tell the user to run the setup skill (`/setup`) first. Do not guess any ID, label or rule.
 
-The settings hold: name, target roles and level, locations, pay floor, search email or alias, portfolio and LinkedIn links, Gmail label name, Drive year folder ID, tracker Sheet ID, status list, ghosted window in days, archive rule for referrals, file naming patterns, cover letter header and writing rules, banned words, claims the user won't make, mock interview lengths, thank-you and review timing, approval boundaries, and working style. See `references/settings-template.md` for the exact layout.
+The settings hold: name, target roles and level, locations, pay floor, search email or alias, portfolio and LinkedIn links, Gmail label name, Drive year folder ID, tracker Sheet ID, status list, ghosted window in days, file naming patterns, cover letter header and writing rules, banned words, claims the user won't make, mock interview lengths, thank-you and review timing, approval boundaries, and working style. See `references/settings-template.md` for the exact layout.
 
 If a setting a task needs is still a placeholder (for example, the tracker Sheet ID before the tracker exists), say which one is missing and how to fill it, then stop that part of the task.
 
@@ -34,13 +34,14 @@ If a setting a task needs is still a placeholder (for example, the tracker Sheet
 - Use only the statuses in the settings. A status the settings don't list needs the user's confirmation first.
 - Flag rows with no response after the ghosted window as likely ghosted. Never change their status on your own.
 - Fill Status Date when a status changes and keep Days to Status a plain number.
+- For referral applications, set Source to Referral and record the referrer's name and contact details in the Referral Contact column.
 
 ## 3. Drive rules
 
 - Everything lives under the Drive year folder from the settings. One subfolder per company, named with the company name.
 - Companies with status Rejected go in the `Rejected` subfolder, stalled ones in `Inactive`. Active ones stay in the year folder. Ask before moving a folder.
 - Find files with a title search on the company name (Drive search uses `title contains`, not `name contains`).
-- Save job descriptions, prep briefs and cover letters as Google Docs in the company folder. Save each tailored resume as both a .docx and a Google Doc, using the naming pattern from the settings.
+- Save job descriptions, prep briefs and cover letters as Google Docs in the company folder. Archive the job description for every application, referrals included. Save each tailored resume as both a .docx and a Google Doc, using the naming pattern from the settings.
 - Never trash or delete a file unless the user asks.
 
 ## 4. Gmail and Calendar rules
@@ -60,4 +61,9 @@ If a setting a task needs is still a placeholder (for example, the tracker Sheet
 
 ## 6. Missing inputs
 
-If a task needs something only the user can supply (a job description, interviewer names and LinkedIn details, a recruiter's name, interview date and format, salary range, application questions), first check Drive, Gmail and Calendar. Then ask for everything still missing in one short message. Do not build around the gap.
+If a task needs something only the user can supply (a job description, interviewer names and LinkedIn details, a recruiter's name, interview date and format, salary range, application questions, a referrer's name and contact details), first check Drive, Gmail and Calendar. Then ask for what is still missing.
+
+- Ask for one thing per message, wait for the answer, then ask for the next. Never bundle requests, even short or related ones.
+- Ask in order of what the task needs first.
+- Accept "none", "unknown" or "skip" and move on.
+- Do not build around the gap.

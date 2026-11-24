@@ -14,9 +14,9 @@ JobSearch OS runs your job search with Claude and the Google apps you already us
 
 | Skill | What it does |
 | --- | --- |
-| `/setup` | Interviews you (13 questions), saves your settings as a "JobSearch OS Settings" Google Doc, and builds your tracker Google Sheet with a Dashboard and Legend |
+| `/setup` | Interviews you one question at a time, saves your settings as a "JobSearch OS Settings" Google Doc, and builds your tracker Google Sheet with a Dashboard and Legend |
 | `/run` | Sweeps your Gmail job label and calendar, updates the tracker in place, flags likely ghosted applications, and lists anything it couldn't classify |
-| `/apply` | Archives the job description, checks fit, recommends and tailors a resume, drafts or reviews your cover letter, and updates the tracker after you apply |
+| `/apply` | Archives the job description (referrals too, with the referrer's name and contact details logged in the tracker), checks fit, recommends and tailors a resume, drafts or reviews your cover letter, and updates the tracker after you apply |
 | `/prep` | Builds an interview prep brief as a Google Doc and adds a mock interview block to your calendar |
 | `/thanks` | Drafts one thank-you email per interviewer in Gmail and adds a 20-minute review block |
 | `jobsearch-os-rules` | The standing rules every other skill follows (loads automatically) |
@@ -35,6 +35,7 @@ Your settings live in the "JobSearch OS Settings" Google Doc in your Drive year 
 - Nothing is sent, submitted, deleted or trashed without your explicit request.
 - Syncs run only when you ask.
 - Claude never invents experience and respects your "claims I won't make" list.
+- Claude asks for one thing at a time, so you never have to answer a block of questions at once.
 
 ## License
 
